@@ -1,465 +1,144 @@
-.screen {
-    background-color: #ffffff;
-    display:flex;
-    flex-direction:column;   /* ⇐ було row */
-    align-items:center;
-  }
+/* =====================================================================
+   INDEX • RESPONSIVE STYLES (DESKTOP FIRST)
+   =================================================================== */
 
-  .banner-img{
-    width:100vw;         
-    max-width:none;          
-    display:block;
-    height:auto;
-  }
-  
-  .screen .div {
-    background-color: #ffffff;
-    height: 3065px;
-    position: relative;
-    width: 1440px;
-  }
-  
-  .screen .text-wrapper {
-    color: #000000;
-    font-family: "Inter", Helvetica;
-    font-size: 48px;
-    font-weight: 600;
-    left: 88px;
-    letter-spacing: -0.96px;
-    line-height: normal;
-    position: absolute;
-    top: 2275px;
-    width: 625px;
-  }
-  
-  .screen .cards {
-    align-items: flex-start;
-    display: flex;
-    gap: 32px;
-    left: 88px;
-    position: absolute;
-    top: 2382px;
-    width: 1280px;
-  }
-  
-  .screen .customer-quote {
-    align-items: flex-start;
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #e6e6e6;
-    border-radius: 12px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 48px;
-    margin-bottom: -1.00px;
-    margin-left: -1.00px;
-    margin-top: -1.00px;
-    padding: 32px;
-    position: relative;
-  }
-  
-  .screen .text-wrapper-2 {
-    align-self: stretch;
-    color: #000000;
-    font-family: "Inter", Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-top: -0.50px;
-    position: relative;
-  }
-  
-  .screen .avatar {
-    align-items: center;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 16px;
-    position: relative;
-  }
-  
-  .screen .img {
-    height: 45px;
-    object-fit: cover;
-    position: relative;
-    width: 45px;
-  }
-  
-  .screen .frame {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 2px;
-    position: relative;
-  }
-  
-  .screen .text-wrapper-3 {
-    color: #000000;
-    font-family: var(--small-text-font-family);
-    font-size: var(--small-text-font-size);
-    font-style: var(--small-text-font-style);
-    font-weight: var(--small-text-font-weight);
-    letter-spacing: var(--small-text-letter-spacing);
-    line-height: var(--small-text-line-height);
-    margin-top: -1.00px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .screen .text-wrapper-4 {
-    color: #828282;
-    font-family: var(--small-text-font-family);
-    font-size: var(--small-text-font-size);
-    font-style: var(--small-text-font-style);
-    font-weight: var(--small-text-font-weight);
-    letter-spacing: var(--small-text-letter-spacing);
-    line-height: var(--small-text-line-height);
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .screen .customer-quote-2 {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #e6e6e6;
-    border-radius: 12px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 48px;
-    margin-bottom: -1.00px;
-    margin-top: -1.00px;
-    padding: 32px;
-    position: relative;
-  }
-  
-  .screen .customer-quote-3 {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: #ffffff;
-    border: 1px solid;
-    border-color: #e6e6e6;
-    border-radius: 12px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 48px;
-    margin-bottom: -1.00px;
-    margin-right: -1.00px;
-    margin-top: -1.00px;
-    padding: 32px;
-    position: relative;
-  }
-  
-  .screen .navigation-footer {
-    background-color: #ffffff;
-    height: 153px;
-    left: 0;
-    position: absolute;
-    top: 2912px;
-    width: 1440px;
-  }
-  
-  .screen .items {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    justify-content: center;
-    left: 973px;
-    position: absolute;
-    top: 45px;
-    width: 187px;
-  }
-  
-  .screen .text-wrapper-5 {
-    align-self: stretch;
-    color: #000000;
-    font-family: var(--small-text-font-family);
-    font-size: var(--small-text-font-size);
-    font-style: var(--small-text-font-style);
-    font-weight: var(--small-text-font-weight);
-    letter-spacing: var(--small-text-letter-spacing);
-    line-height: var(--small-text-line-height);
-    margin-top: -1.00px;
-    position: relative;
-  }
-  
-  .screen .div-wrapper {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    justify-content: center;
-    left: 1173px;
-    position: absolute;
-    top: 48px;
-    width: 187px;
-  }
-  
-  .screen .text-wrapper-6 {
-    color: #000000;
-    font-family: "Inter", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    height: 72px;
-    left: 88px;
-    letter-spacing: 0;
-    line-height: 36px;
-    position: absolute;
-    top: 2px;
-  }
-  
-  .screen .social-icons {
-    align-items: flex-start;
-    display: inline-flex;
-    gap: 8px;
-    left: 80px;
-    position: absolute;
-    top: 77px;
-  }
-  
-  .screen .buttons-icon {
-    border-radius: 4px;
-    height: 40px;
-    position: relative;
-    width: 40px;
-  }
-  
-  .screen .icon {
-    height: 24px;
-    left: 8px;
-    position: relative;
-    top: 8px;
-    width: 24px;
-  }
-  
-  .screen .icon-2 {
-    height: 20px;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    width: 20px;
-  }
-  
-  .screen .icon-3 {
-    height: 18px;
-    left: 3px;
-    position: absolute;
-    top: 3px;
-    width: 18px;
-  }
-  
-  .screen .icon-4 {
-    height: 14px;
-    left: 2px;
-    position: absolute;
-    top: 5px;
-    width: 20px;
-  }
-  
-  .screen .divider {
-    height: 1px;
-    left: 80px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 1280px;
-  }
-  
-  .screen .navigation {
-    background-color: #ffffff;
-    height: 164px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1440px;
-  }
-  
-  .screen .items-2 {
-    align-items: center;
-    display: inline-flex;
-    gap: 48px;
-    justify-content: flex-end;
-    left: 735px;
-    position: absolute;
-    top: 56px;
-  }
-  
-  .screen .text-wrapper-7 {
-    color: #000000;
-    font-family: var(--body-text-font-family);
-    font-size: var(--body-text-font-size);
-    font-style: var(--body-text-font-style);
-    font-weight: var(--body-text-font-weight);
-    letter-spacing: var(--body-text-letter-spacing);
-    line-height: var(--body-text-line-height);
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .screen .button {
-    all: unset;
-    align-items: center;
-    background-color: #000000;
-    border-radius: 8px;
-    box-shadow: var(--button-shadow);
-    box-sizing: border-box;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    padding: 14px 24px;
-    position: relative;
-  }
-  
-  .screen .text-wrapper-8 {
-    color: #ffffff;
-    font-family: var(--small-text-font-family);
-    font-size: var(--small-text-font-size);
-    font-style: var(--small-text-font-style);
-    font-weight: var(--small-text-font-weight);
-    letter-spacing: var(--small-text-letter-spacing);
-    line-height: var(--small-text-line-height);
-    margin-top: -1.00px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .screen .happy-kids-world {
-    height: 23px;
-    left: 82px;
-    position: absolute;
-    top: 73px;
-    width: 194px;
-  }
-  
-  .screen .copy {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    justify-content: center;
-    left: 859px;
-    position: absolute;
-    top: 1350px;
-    width: 516px;
-  }
-  
-  .screen .text-wrapper-9 {
-    align-self: stretch;
-    color: #000000;
-    font-family: "Inter", Helvetica;
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: 0;
-    line-height: 48.0px;
-    margin-top: -1.00px;
-    position: relative;
-  }
-  
-  .screen .p {
-    align-self: stretch;
-    color: #828282;
-    font-family: var(--subheading-font-family);
-    font-size: var(--subheading-font-size);
-    font-style: var(--subheading-font-style);
-    font-weight: var(--subheading-font-weight);
-    letter-spacing: var(--subheading-letter-spacing);
-    line-height: var(--subheading-line-height);
-    position: relative;
-  }
-  
-  .screen .buttons {
-    height: 60px;
-    position: relative;
-    width: 150px;
-  }
-  
-  .screen .button-2 {
-    all: unset;
-    align-items: center;
-    background-color: #000000;
-    border-radius: 8px;
-    box-shadow: var(--button-shadow);
-    box-sizing: border-box;
-    display: inline-flex;
-    gap: 8px;
-    padding: 12px 24px;
-    position: relative;
-  }
-  
-  .screen .text-wrapper-10 {
-    color: #ffffff;
-    font-family: "Inter", Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 36px;
-    margin-top: -1.00px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .screen .image {
-    height: 429px;
-    left: 77px;
-    object-fit: cover;
-    position: absolute;
-    top: 1746px;
-    width: 643px;
-  }
-  
-  .screen .image-2 {
-    height: 434px;
-    left: 760px;
-    object-fit: cover;
-    position: absolute;
-    top: 1741px;
-    width: 651px;
-  }
-  
-  .screen .image-3 {
-    height: 959px;
-    left: 2px;
-    object-fit: cover;
-    position: absolute;
-    top: 168px;
-    width: 1438px;
-  }
-  
-  .screen .image-4 {
-    height: 422px;
-    left: 58px;
-    object-fit: cover;
-    position: absolute;
-    top: 1245px;
-    width: 685px;
-  }
+/* ---- RESET ---- */
+*{box-sizing:border-box;margin:0;padding:0}img{max-width:100%;height:auto}
+body{font-family:"Inter",Helvetica,Arial,sans-serif;overflow-x:hidden}
+.screen{background:#fff;display:flex;flex-direction:column;align-items:center}
+.div   {position:relative;width:1440px;height:3065px;background:#fff}
 
-  .nav-btn{
-    background:#fff;
-    color:#000;
-    padding:14px 24px;
-    border-radius:8px;
-    text-decoration:none;
-    display:inline-block;
-    transition:.2s;
-  }
-  .nav-btn:hover,.nav-btn:focus{
-    background:#000;
-    color:#fff;
-  }
-  
+/* ---------------------------------------------------------------------
+   1. HEADER  (не fixed на desktop & tablet)
+   ------------------------------------------------------------------ */
+.navigation{
+  position:absolute;top:0;left:0;width:100%;height:164px;
+  background:#fff;display:flex;align-items:center;flex-direction:row;
+  justify-content:space-between;padding:0 80px;z-index:99;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.happy-kids-world{height:23px;width:auto;order:1}
+.items-2{display:inline-flex;gap:48px;order:2}
+.nav-btn{
+  background:#fff;color:#000;padding:14px 24px;border-radius:8px;
+  text-decoration:none;white-space:nowrap;border:2px solid transparent;transition:.2s}
+.nav-btn:hover,.nav-btn:focus{background:#000;color:#fff;border-color:#fff}
+
+/* burger – приховано за замовчуванням */
+.nav-toggle{display:none}
+.burger{display:none;width:28px;height:22px;position:relative;cursor:pointer;border:none;background:transparent}
+.burger::before,.burger::after,.burger span{
+  content:'';position:absolute;left:0;width:100%;height:4px;background:#000;border-radius:2px;transition:.3s}
+.burger::before{top:0}.burger::after{bottom:0}
+.burger span{top:50%;transform:translateY(-50%)}
+
+/* ---------------------------------------------------------------------
+   2. HERO-BANNER + ГАЛЕРЕЯ
+   ------------------------------------------------------------------ */
+.image-3{position:absolute;top:168px;left:2px;width:1438px;height:959px;object-fit:cover}
+.image-4{position:absolute;top:1245px;left:58px;width:685px;height:422px;object-fit:cover}
+.image  {position:absolute;top:1746px;left:77px;width:643px;height:429px;object-fit:cover}
+.image-2{position:absolute;top:1741px;left:760px;width:651px;height:434px;object-fit:cover}
+
+/* ---------------------------------------------------------------------
+   3. HERO-COPY
+   ------------------------------------------------------------------ */
+.copy{position:absolute;top:1350px;left:859px;width:516px;display:flex;flex-direction:column;gap:24px}
+.text-wrapper-9{font-size:40px;font-weight:600}
+.p{font-size:18px;color:#828282}
+.button-2{all:unset;display:inline-flex;gap:8px;padding:12px 24px;background:#000;border-radius:8px}
+.text-wrapper-10{font-size:24px;color:#fff}
+
+/* ---------------------------------------------------------------------
+   4. REVIEWS
+   ------------------------------------------------------------------ */
+.text-wrapper{position:absolute;top:2275px;left:88px;font-size:48px;font-weight:600}
+.cards{position:absolute;top:2382px;left:88px;display:flex;gap:32px;width:1280px}
+.customer-quote,.customer-quote-2,.customer-quote-3{
+  flex:1;background:#fff;border:1px solid #e6e6e6;border-radius:12px;
+  padding:32px;display:flex;flex-direction:column;gap:48px}
+.text-wrapper-2{font-size:24px;font-weight:500}
+.avatar{display:inline-flex;gap:16px;align-items:center}
+.frame{display:flex;flex-direction:column;gap:2px}
+.text-wrapper-3{font-size:14px;font-weight:600}
+.text-wrapper-4{font-size:14px;color:#828282}
+
+/* ---------------------------------------------------------------------
+   5. FOOTER
+   ------------------------------------------------------------------ */
+.navigation-footer{
+  position:absolute;top:2912px;left:0;width:1440px;height:153px;background:#fff}
+.divider{position:absolute;top:0;left:80px;width:1280px;height:1px}
+.text-wrapper-6{position:absolute;left:88px;top:20px;font-size:24px}
+.social-icons{position:absolute;left:80px;top:77px;display:inline-flex;gap:8px}
+.buttons-icon{width:40px;height:40px;border-radius:4px}
+.icon{position:relative;top:8px;left:8px;width:24px;height:24px}
+.items,.div-wrapper{
+  position:absolute;top:48px;width:187px;display:flex;flex-direction:column;gap:24px;align-items:flex-end}
+.items{left:973px}.div-wrapper{left:1173px}
+.text-wrapper-5{font-size:14px;color:#000}
+
+/* =====================================================================
+   6. TABLET  (≤ 991.98 px)
+   =================================================================== */
+@media (max-width:991.98px){
+  .div{width:100%;height:auto;padding:0 40px}
+  /* header перестає бути shadow-fixed, лишається на своєму місці */
+  .navigation{position:relative;padding:0;width:100%;box-shadow:none}
+  /* hero-банер */
+  .image-3{width:100vw;height:auto}
+  /* копі одразу після банера */
+  .copy{position:static;width:100%;padding:40px 0}
+  /* інші зображення по центру з боковими полями */
+  .image-4,.image,.image-2{position:static;width:100%;height:auto;margin:32px 0}
+  /* reviews */
+  .text-wrapper{position:static;margin:72px 0 0;font-size:40px}
+  .cards{position:static;flex-direction:column;width:100%;gap:32px;margin-top:32px}
+  /* footer лишаємо desktop-вигляд */
+}
+
+/* =====================================================================
+   7. MOBILE  (≤ 575.98 px)
+   =================================================================== */
+@media (max-width:575.98px){
+  .screen{padding-top:80px}
+  .div{padding:0 16px}
+  /* ---------- header fixed тільки тут ---------- */
+  .navigation{
+    position:fixed;top:0;left:0;height:80px;
+    padding:0 16px;flex-direction:row;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+  .happy-kids-world{order:0;height:20px}
+  /* burger видно */
+  .burger{display:block;order:1}
+  .burger::before,.burger::after,.burger span{background:#000}
+  .burger span{display:block}
+  /* menu-drawer */
+  .items-2{
+    position:fixed;top:80px;right:-100%;width:220px;height:calc(100vh - 80px);
+    flex-direction:column;gap:16px;padding:24px 16px;background:#fff;transition:.3s}
+  .nav-toggle:checked ~ .items-2{right:0}
+  .nav-btn{width:100%;padding:12px 0;font-size:14px}
+  .items-2 a:last-child{order:-1}
+  /* burger animation */
+  .nav-toggle:checked + .burger::before{transform:translateY(9px) rotate(45deg)}
+  .nav-toggle:checked + .burger::after {transform:translateY(-9px) rotate(-45deg)}
+  .nav-toggle:checked + .burger span{opacity:0}
+  /* hero */
+  .image-3{position:static;width:calc(100% + 32px)}
+  .copy{padding:24px 0}
+  .text-wrapper-9{font-size:28px;text-align:center}
+  .p{font-size:14px;text-align:center}
+  .button-2{margin:0 auto}
+  /* інші зображення */
+  .image-4,.image,.image-2{margin-top:16px}
+  /* reviews */
+  .text-wrapper{margin:48px 0 0;font-size:24px}
+  .cards{gap:16px;margin-top:16px}
+  .customer-quote,.customer-quote-2,.customer-quote-3{padding:24px;gap:24px}
+  .text-wrapper-2{font-size:18px}
+  /* footer спрощений */
+  .navigation-footer{
+    position:static;width:100%;padding:24px 0;height:auto;margin-top:72px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  .divider,.items,.div-wrapper{display:none}
+  .social-icons{position:static;order:0}
+  .text-wrapper-6{position:static;order:1;font-size:18px;margin-left:auto}
+}
