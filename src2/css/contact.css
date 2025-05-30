@@ -1,91 +1,141 @@
-/* ================= 1. Базовий контейнер ================= */
-.screen{
-    background:#fff;
-    display:flex;
-    flex-direction:column;
-    align-items:center;        /* центрує .div по горизонталі */
-  }
-  .div{
-    width:1440px;
-    position:relative;
-    background:#fff;
-  }
-  
-  /* ================= 2. ХЕДЕР (164 px) ==================== */
+/* =====================================================================
+   CONTACT • RESPONSIVE STYLES (DESKTOP FIRST)
+   =================================================================== */
+
+/* ---- RESET ---- */
+*{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;height:auto;display:block}
+body{font-family:"Inter",Helvetica,Arial,sans-serif;overflow-x:hidden}
+.screen{background:#fff;display:flex;flex-direction:column;align-items:center}
+.div   {position:relative;width:1440px;height:1788px;background:#fff}
+
+/* ---------------------------------------------------------------------
+   1. HEADER (десктоп & tablet — не fixed)
+   ------------------------------------------------------------------ */
+.navigation{
+  position:absolute;top:0;left:0;width:1440px;height:164px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 80px;background:#fff;z-index:99;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.happy-kids-world{height:23px;width:auto;order:1}
+.items-2{display:inline-flex;gap:48px;order:2}
+.nav-btn{
+  background:#fff;color:#000;padding:14px 24px;border-radius:8px;
+  text-decoration:none;white-space:nowrap;border:2px solid transparent;transition:.2s}
+.nav-btn:hover,.nav-btn:focus{background:#000;color:#fff;border-color:#fff}
+
+/* ---- burger / checkbox (приховані на desktop) ---- */
+.nav-toggle{display:none}
+.burger{display:none;width:28px;height:22px;position:relative;cursor:pointer;border:none;background:transparent}
+.burger::before,.burger::after,.burger span{
+  content:'';position:absolute;left:0;width:100%;height:4px;background:#000;border-radius:2px;transition:.3s}
+.burger::before{top:0}.burger::after{bottom:0}
+.burger span{top:50%;transform:translateY(-50%)}
+
+/* ---------------------------------------------------------------------
+   2. “Про нас” intro (Bootstrap container)
+   ------------------------------------------------------------------ */
+.container.py-5{margin-top:164px}     /* зміщення під абсолютний хедер */
+
+/* ---------------------------------------------------------------------
+   3. FORM + GOOGLE MAP  (десктоп 2-колонки)
+   ------------------------------------------------------------------ */
+.contact-wrap{
+  position:absolute;top:925px;left:80px;
+  display:flex;gap:32px}
+.contact-form{width:626px}
+.map-box    {width:582px;height:458px}
+.map-box iframe{width:100%;height:100%;border:0}
+
+/* ---------------------------------------------------------------------
+   4. FOOTER (повна версія)
+   ------------------------------------------------------------------ */
+.navigation-footer{
+  position:absolute;top:1635px;left:0;width:1440px;height:153px;background:#fff}
+.divider{position:absolute;top:0;left:80px;width:1280px;height:1px}
+.text-wrapper-6{position:absolute;left:88px;top:20px;font-size:24px}
+.social-icons{position:absolute;left:80px;top:77px;display:inline-flex;gap:8px}
+.buttons-icon{width:40px;height:40px;border-radius:4px}
+.icon{position:relative;top:8px;left:8px;width:24px;height:24px}
+.items,.div-wrapper{
+  position:absolute;top:48px;width:187px;display:flex;flex-direction:column;
+  gap:24px;align-items:flex-end}
+.items{left:975px}.div-wrapper{left:1212px}
+.text-wrapper-5{font-size:14px;color:#000}
+
+/* =====================================================================
+   5. TABLET (≤ 991.98 px)
+   =================================================================== */
+@media (max-width:991.98px){
+  .div{width:100%;height:auto;padding:0 40px}
+  /* header переходить у звичайний потік */
   .navigation{
-    position:absolute; top:0; left:0;
-    width:1440px; height:164px;
-    display:flex; align-items:center; justify-content:space-between;
-    padding:0 80px;
-    z-index:20;
-    background:#fff;           /* щоб не “просвічував” текст */
+    position:relative;width:100%;height:auto;padding:24px 0 0 40px;box-shadow:none}
+  .container.py-5{margin-top:0}
+  /* form + map стають стовпчиком */
+  .contact-wrap{
+    position:static;flex-direction:column;gap:40px;margin-top:48px;padding:0}
+  .contact-form,.map-box{width:100%}
+  .map-box{height:360px}
+  /* footer залишається повною версією */
+
+  .navigation{
+    padding:0 24px;                /* менші бокові поля */
+    height:120px;                  /* трохи нижчий рядок */
   }
-  .happy-kids-world{height:23px; width:auto;}
   
-  .items-2{display:flex; gap:48px;}
+  .happy-kids-world{
+    order:0;                       /* логотип зліва */
+    margin-right:auto;             /* штовхає меню вправо */
+    height:20px;                   /* пропорційно менше */
+  }
+  
+  .items-2{
+    order:1;
+    flex-wrap:wrap;                /* якщо не міститься — переноситься */
+    justify-content:flex-end;
+    gap:24px;                      /* половинний від desktop-проміжку */
+    max-width:calc(100% - 140px);  /* застереження від виходу за край */
+  }
   
   .nav-btn{
-    background:#fff; color:#000;
-    padding:14px 24px; border-radius:8px;
-    text-decoration:none; white-space:nowrap;
-    border:2px solid transparent; transition:.2s;
+    padding:10px 16px;             /* вужчі кнопки */
+    font-size:14px;                /* дрібніший текст */
   }
-  .nav-btn:hover,.nav-btn:focus{background:#000; color:#fff; border-color:#fff;}
-  
-  /* ================= 3. Секція “Про нас” ================== */
-  .container.py-5{margin-top:164px;}   /* щоб не налізала на хедер */
-  
-  /* ================= 4. Форма + карта ===================== */
-  .contact-wrap{
-    position:absolute; top:925px; left:80px;
-    display:flex; gap:32px;
-  }
-  .contact-form{width:626px;}
-  .map-box{width:582px; height:458px;}
-  .map-box iframe{width:100%; height:100%; border:0;}
-  
-  /* ================= 5. ФУТЕР (153 px) ==================== */
+
+}
+
+/* =====================================================================
+   6. MOBILE (≤ 575.98 px)
+   =================================================================== */
+@media (max-width:575.98px){
+  .screen{padding-top:80px}
+  .div{padding:0 16px}
+  /* ---------- fixed-header + burger ---------- */
+  .navigation{
+    position:fixed;top:0;left:0;width:100%;height:80px;
+    padding:0 16px;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+  .happy-kids-world{height:20px;order:0}
+  .burger{display:block;order:1}
+  /* drawer-меню */
+  .items-2{
+    position:fixed;top:80px;right:-100%;width:220px;height:calc(100vh - 80px);
+    flex-direction:column;gap:16px;padding:24px 16px;background:#fff;transition:.3s}
+  .nav-toggle:checked ~ .items-2{right:0}
+  .nav-btn{width:100%;padding:12px 0;font-size:14px}
+  /* burger animation */
+  .nav-toggle:checked + .burger::before{transform:translateY(9px) rotate(45deg)}
+  .nav-toggle:checked + .burger::after {transform:translateY(-9px) rotate(-45deg)}
+  .nav-toggle:checked + .burger span{opacity:0}
+  /* intro-section */
+  .container.py-5{padding-top:24px}
+  /* form + map */
+  .contact-wrap{gap:24px;margin-top:24px}
+  .map-box{height:300px}
+  /* simplified footer */
   .navigation-footer{
-    position:absolute; top:1635px; left:0;
-    width:1440px; height:153px;
-    background:#fff;
-  }
-  
-  /* — роздільна лінія */
-  .navigation-footer .divider{
-    position:absolute; left:80px; top:0;
-    width:1280px; height:1px; object-fit:cover;
-  }
-  
-  /* — логотип */
-  .navigation-footer .text-wrapper-6{
-    position:absolute; left:88px; top:20px;
-    font-family:"Inter",Helvetica; font-size:24px; line-height:36px;
-    color:#000;
-  }
-  
-  /* — соц-іконки */
-  .social-icons{
-    position:absolute; left:80px; top:77px;
-    display:flex; gap:8px;
-  }
-  .buttons-icon{width:40px; height:40px; border-radius:4px;}
-  .icon{position:relative; top:8px; left:8px; width:24px; height:24px;}
-  
-  /* — дві колонки посилань праворуч */
-  .items, .div-wrapper{
-    position:absolute;
-    width:187px; top:48px;
-    display:flex; flex-direction:column; gap:24px;
-    align-items:flex-end; justify-content:center;
-  }
-  .items{left:975px;}
-  .div-wrapper{left:1212px;}
-  
-  .text-wrapper-5{
-    color:#000;
-    font-family:var(--small-text-font-family);
-    font-size:var(--small-text-font-size);
-    line-height:var(--small-text-line-height);
-  }
-  
+    position:static;width:100%;padding:24px 0;height:auto;margin-top:72px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  .divider,.items,.div-wrapper{display:none}
+  .social-icons{position:static;order:0}
+  .text-wrapper-6{position:static;order:1;font-size:18px;margin-left:auto}
+}
