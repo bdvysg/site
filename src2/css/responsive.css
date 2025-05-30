@@ -1,0 +1,19 @@
+/* Hero-банер: full-width background */
+.hero-banner{
+    background:url('../img/image-5.png') center/cover no-repeat;
+    min-height:60vh;                 /* гнучка висота */
+  }
+  @media (max-width:575.98px){
+    .hero-banner{min-height:40vh;}   /* нижчий на мобайлі */
+  }
+  
+  /* Кнопка в навігації “Контактна інформація” */
+  .navbar .btn{
+    padding:.6rem 1.25rem;
+    transition:.2s;
+  }
+  .navbar .btn:hover{
+    color:#fff;
+    background:#000;
+  }
+  
