@@ -1,385 +1,130 @@
-.screen {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .screen .div {
-    background-color: #ffffff;
-    height: 2115px;
-    position: relative;
-    width: 1442px;
-  }
-  
-  .screen .overlap {
-    height: 720px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1442px;
-  }
-  
-  .screen .header-with-image {
-    background: url(https://c.animaapp.com/mavfd3u8ENfTdS/img/header-with-image.png)
-      50% 50% / cover,
-      linear-gradient(
-        0deg,
-        rgba(247, 247, 247, 1) 0%,
-        rgba(247, 247, 247, 1) 100%
-      );
-    height: 720px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1442px;
-  }
-  
-  .screen .overlap-group {
-    background-color: #0000003d;
-    height: 720px;
-  }
-  
-  .screen .copy {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    left: 299px;
-    position: relative;
-    top: 284px;
-    width: 844px;
-  }
-  
-  .screen .page-title {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 16px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .screen .text-wrapper {
-    align-self: stretch;
-    color: #ffffff;
-    font-family: "Inter", Helvetica;
-    font-size: 64px;
-    font-weight: 700;
-    letter-spacing: -1.28px;
-    line-height: 89.6px;
-    margin-top: -1.00px;
-    position: relative;
-    text-align: center;
-  }
-  
-  .screen .p {
-    align-self: stretch;
-    color: #ffffff;
-    font-family: "Inter", Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 33.6px;
-    position: relative;
-    text-align: center;
-  }
-  
-  .screen .navigation {
-    height: 164px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1440px;
-  }
-  
-  
-  .screen .text-wrapper-2 {
-    color: #ffffff;
-    font-family: var(--body-text-font-family);
-    font-size: var(--body-text-font-size);
-    font-style: var(--body-text-font-style);
-    font-weight: var(--body-text-font-weight);
-    letter-spacing: var(--body-text-letter-spacing);
-    line-height: var(--body-text-line-height);
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .screen .button {
-    all: unset;
-    align-items: center;
-    border: 2px solid;
-    border-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: var(--button-shadow);
-    box-sizing: border-box;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    padding: 14px 24px;
-    position: relative;
-  }
-  
-  .screen .text-wrapper-3 {
-    color: #ffffff;
-    font-family: var(--small-text-font-family);
-    font-size: var(--small-text-font-size);
-    font-style: var(--small-text-font-style);
-    font-weight: var(--small-text-font-weight);
-    letter-spacing: var(--small-text-letter-spacing);
-    line-height: var(--small-text-line-height);
-    margin-top: -2.00px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .screen .text-wrapper-4 {
-    color: #ffffff;
-    font-family: var(--body-text-font-family);
-    font-size: var(--body-text-font-size);
-    font-style: var(--body-text-font-style);
-    font-weight: var(--body-text-font-weight);
-    height: 30px;
-    left: 80px;
-    letter-spacing: var(--body-text-letter-spacing);
-    line-height: var(--body-text-line-height);
-    position: absolute;
-    top: 66px;
-    white-space: nowrap;
-  }
-  
-  .screen .text-wrapper-5 {
-    align-self: stretch;
-    color: #000000;
-    font-family: var(--small-text-font-family);
-    font-size: var(--small-text-font-size);
-    font-style: var(--small-text-font-style);
-    font-weight: var(--small-text-font-weight);
-    letter-spacing: var(--small-text-letter-spacing);
-    line-height: var(--small-text-line-height);
-    margin-top: -1.00px;
-    position: relative;
-  }
-  
-  .screen .items-2{
-    width: auto;
-    display:inline-flex;
-    align-items:center;
-    justify-content:flex-end;
-    flex-direction:row;      /* ← рядком */
-    gap:48px;                /* такий самий проміжок, як на головній */
-    position:absolute;
-    top:56px;
-    left:735px;
-  }
-  
-  
-  .screen .text-wrapper-6 {
-    color: #000000;
-    font-family: var(--subheading-font-family);
-    font-size: var(--subheading-font-size);
-    font-style: var(--subheading-font-style);
-    font-weight: var(--subheading-font-weight);
-    height: 36px;
-    left: 88px;
-    letter-spacing: var(--subheading-letter-spacing);
-    line-height: var(--subheading-line-height);
-    position: absolute;
-    top: 20px;
-    white-space: nowrap;
-  }
-  
-  
-  .screen .buttons-icon {
-    border-radius: 4px;
-    height: 40px;
-    position: relative;
-    width: 40px;
-  }
-  
-  .screen .icon {
-    height: 24px;
-    left: 8px;
-    position: relative;
-    top: 8px;
-    width: 24px;
-  }
-  
-  .screen .img {
-    height: 20px;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    width: 20px;
-  }
-  
-  .screen .icon-2 {
-    height: 18px;
-    left: 3px;
-    position: absolute;
-    top: 3px;
-    width: 18px;
-  }
-  
-  .screen .icon-3 {
-    height: 14px;
-    left: 2px;
-    position: absolute;
-    top: 5px;
-    width: 20px;
-  }
-  
-  .screen .divider {
-    height: 1px;
-    left: 80px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 1280px;
-  }
-  
-  .screen .image {
-    height: 389px;
-    left: 45px;
-    object-fit: cover;
-    position: absolute;
-    top: 820px;
-    width: 600px;
-  }
-  
-  .screen .image-2 {
-    height: 400px;
-    left: 744px;
-    object-fit: cover;
-    position: absolute;
-    top: 1009px;
-    width: 600px;
-  }
-  
-  .screen .image-3 {
-    height: 401px;
-    left: 45px;
-    object-fit: cover;
-    position: absolute;
-    top: 1309px;
-    width: 600px;
-  }
-  
-  .screen .image-4 {
-    height: 400px;
-    left: 744px;
-    object-fit: cover;
-    position: absolute;
-    top: 1506px;
-    width: 600px;
-  }
-  .nav-btn{
-    background:#fff;
-    color:#000;
-    padding:14px 24px;
-    border-radius:8px;
-    text-decoration:none;
-    display:inline-block;
-    transition:.2s;
-    white-space:nowrap;
-  }
-  .nav-btn:hover,.nav-btn:focus{
-    background:#000;
-    color:#fff;
-  }
-  
-  /* фон HERO — то же изображение, но через CSS, чтобы тянуться ровно 1440 px */
-  .header-with-image{
-    background:url("../img/header-with-image.png") center/cover no-repeat;
-    width:1440px;   /* совпадает с шириной .div */
-    height:720px;
-  }
-  
-  /* полупрозрачный overlay */
-  .overlap-group{
-    background:rgba(0,0,0,.24);
-    width:1440px;
-    height:720px;
-  }
+/* =====================================================================
+   ABOUT • RESPONSIVE STYLES (DESKTOP FIRST)
+   =================================================================== */
 
-  /* --- Footer (уніфіковано) --- */
-.navigation-footer{
-    background-color:#ffffff;
-    height:153px;
-    width:1440px;
-    position:absolute;
-    left:0;
-    top:1962px;          /* можна залишити 1962 px, бо About коротший */
-  }
-  
-  .items,
-  .div-wrapper{
-    display:flex;
-    flex-direction:column;
-    gap:24px;
-    align-items:flex-end;
-    justify-content:center;
-    width:187px;
-  }
-  
-  .items{ left:973px;  top:48px;  position:absolute; }
-  .div-wrapper{ left:1173px; top:48px; position:absolute; }
-  
-  .text-wrapper-5{     /* посилання у футері */
-    color:#000;
-    font-family:var(--small-text-font-family);
-    font-size:var(--small-text-font-size);
-    line-height:var(--small-text-line-height);
-  }
-  
-  .text-wrapper-6{     /* “Happy kids world” */
-    color:#000;
-    font-family:"Inter",Helvetica;
-    font-size:24px;
-    line-height:36px;
-    position:absolute;
-    left:88px;
-    top:20px;
-  }
-  
-  .social-icons{
-    position:absolute;
-    left:80px;
-    top:77px;
-    display:inline-flex;
-    gap:8px;
-  }
-  
-  .buttons-icon{ width:40px;height:40px;border-radius:4px; }
-  .icon{ width:24px;height:24px;position:relative;left:8px;top:8px; }
-  .divider{ position:absolute;left:80px;top:0;width:1280px;height:1px;object-fit:cover; }
-  
+/* ---- RESET ---- */
+*{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;height:auto;display:block}
+body{font-family:"Inter",Helvetica,Arial,sans-serif;overflow-x:hidden}
+.screen{background:#fff;display:flex;flex-direction:column;align-items:center}
+.div   {position:relative;width:1440px;height:2115px;background:#fff}
 
-  /* --- Уніфіковані кнопки хедера --- */
+/* ---------------------------------------------------------------------
+   1. HEADER  (десктоп & tablet — НЕ fixed)
+   ------------------------------------------------------------------ */
+.navigation{
+  position:absolute;top:0;left:0;width:100%;height:164px;
+  background:#fff;display:flex;align-items:center;justify-content:space-between;
+  padding:0 80px;z-index:99;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+/* лого (у макеті зліва) */
+.happy-kids-world{height:23px;width:auto;order:1}
+/* список посилань */
+.items-2{display:inline-flex;gap:48px;order:2}
+/* кнопки-посилання */
 .nav-btn{
-    background:#fff;
-    color:#000;
-    padding:14px 24px;
-    border-radius:8px;
-    text-decoration:none;
-    display:inline-block;
-    transition:.2s;
-    border:2px solid transparent;      /* рамка невидима у звичайному стані */
-  }
-  .nav-btn:hover,
-  .nav-btn:focus{
-    background:#000;
-    color:#fff;
-    border-color:#fff;                 /* біла рамка при наведені */
-  }
+  background:#fff;color:#000;padding:14px 24px;border-radius:8px;
+  text-decoration:none;white-space:nowrap;border:2px solid transparent;transition:.2s}
+.nav-btn:hover,.nav-btn:focus{background:#000;color:#fff;border-color:#fff}
 
+/* ---- бургер / чекбокс ---- */
+.nav-toggle{display:none}
+.burger{display:none;width:28px;height:22px;position:relative;cursor:pointer;border:none;background:transparent}
+.burger::before,.burger::after,.burger span{
+  content:'';position:absolute;left:0;width:100%;height:4px;background:#000;border-radius:2px;transition:.3s}
+.burger::before{top:0}.burger::after{bottom:0}
+.burger span{top:50%;transform:translateY(-50%)}
+
+/* ---------------------------------------------------------------------
+   2. HERO-SECTION
+   ------------------------------------------------------------------ */
+.overlap     {position:absolute;top:0;left:0;width:100%;height:720px;z-index:0}
+.header-with-image{
+  width:1440px;height:720px;background:url("../img/header-with-image.png") center/cover no-repeat}
+.overlap-group{width:100%;height:100%;}
+.copy{
+  position:absolute;top:284px;left:299px;width:844px;
+  display:flex;flex-direction:column;gap:40px;align-items:center}
+.page-title{display:flex;flex-direction:column;gap:16px}
+.text-wrapper{font-size:64px;font-weight:700;line-height:1.4;color:#fff;text-align:center}
+.p{font-size:24px;font-weight:500;color:#fff;text-align:center}
+
+/* ---------------------------------------------------------------------
+   3. ГАЛЕРЕЯ 4 фото
+   ------------------------------------------------------------------ */
+.image , .image-2 , .image-3 , .image-4{position:absolute;object-fit:cover}
+.image  {top:820px ;left: 45px;width:600px;height:389px}
+.image-2{top:1009px;left:744px;width:600px;height:400px}
+.image-3{top:1309px;left: 45px;width:600px;height:401px}
+.image-4{top:1506px;left:744px;width:600px;height:400px}
+
+/* ---------------------------------------------------------------------
+   4. FOOTER  (десктоп-повна версія)
+   ------------------------------------------------------------------ */
+.navigation-footer{
+  position:absolute;top:1962px;left:0;width:1440px;height:153px;background:#fff}
+.divider{position:absolute;top:0;left:80px;width:1280px;height:1px}
+.text-wrapper-6{position:absolute;left:88px;top:20px;font-size:24px}
+.social-icons{position:absolute;left:80px;top:77px;display:inline-flex;gap:8px}
+.buttons-icon{width:40px;height:40px;border-radius:4px}
+.icon{position:relative;top:8px;left:8px;width:24px;height:24px}
+.items,.div-wrapper{
+  position:absolute;top:48px;width:187px;display:flex;flex-direction:column;
+  gap:24px;align-items:flex-end}
+.items      {left:973px}.div-wrapper{left:1173px}
+.text-wrapper-5{font-size:14px;color:#000}
+
+/* =====================================================================
+   5. TABLET  (≤ 991.98 px)
+   =================================================================== */
+@media (max-width:991.98px){
+  .div{width:100%;height:auto;padding:0 40px}
+  /* header — звичайний потік */
+  .navigation{position:relative;padding:0 0 0 40px;width:calc(100% + 80px)}
+  /* hero-банер на всю ширину */
+  .header-with-image{width:100vw;height:auto}
+  .overlap      {position:static;width:100%;height:auto}
+  .overlap-group{height:100%}
+  .copy{position:static;width:100%;padding:48px 0}
+  /* галерея стає колонкою */
+  .image,.image-2,.image-3,.image-4{
+    position:static;width:100%;height:auto;margin:32px 0}
+  /* footer залишаємо повною версією */
+}
+
+/* =====================================================================
+   6. MOBILE  (≤ 575.98 px)
+   =================================================================== */
+@media (max-width:575.98px){
+  .screen{padding-top:80px}
+  .div{padding:0 16px}
+  /* ---------- fixed-header з бургером ---------- */
   .navigation{
-    z-index:20;        /* anything > 0, бо Hero без z-index */
-  }
+    position:fixed;top:0;left:0;height:80px;width:100%;
+    padding:0 16px;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+  .happy-kids-world{height:20px;order:0}
+  .burger{display:block;order:1}
+  /* drawer-меню */
+  .items-2{
+    position:fixed;top:80px;right:-100%;width:220px;height:calc(100vh - 80px);
+    flex-direction:column;gap:16px;padding:24px 16px;background:#fff;transition:.3s}
+  .nav-toggle:checked ~ .items-2{right:0}
+  .nav-btn{width:100%;padding:12px 0;font-size:14px}
+  /* burger-animation */
+  .nav-toggle:checked + .burger::before{transform:translateY(9px) rotate(45deg)}
+  .nav-toggle:checked + .burger::after {transform:translateY(-9px) rotate(-45deg)}
+  .nav-toggle:checked + .burger span{opacity:0}
+  /* hero */
+  .header-with-image{width:calc(100% + 32px);margin-left:-16px}
+  .copy{padding:24px 0; background-color: white;}
+  .text-wrapper{font-size:32px}
+  .p{font-size:16px}
+  /* галерея */
+  .image,.image-2,.image-3,.image-4{margin-top:16px}
+  /* simplified footer */
+  .navigation-footer{
+    position:static;width:100%;padding:24px 0;height:auto;margin-top:72px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  .divider,.items,.div-wrapper{display:none}
+  .social-icons{position:static;order:0}
+  .text-wrapper-6{position:static;order:1;font-size:18px;margin-left:auto}
+}
